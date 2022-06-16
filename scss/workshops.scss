@@ -1,0 +1,109 @@
+@import "fonts";
+
+.workshops {
+    background: #F5F5F5;
+    padding: 142px 0 144px 0;
+
+    @media (max-width: 900px){
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 559px){
+        padding-top: 50px;
+    }
+
+    .h2 {
+        @include SourceSansPro700_44_53;
+        text-align: center;
+        color: #1C1C33;
+        margin-bottom: 17px;
+
+        @media (max-width: 335px){
+            font-size: 41px;
+            line-height: 120%;
+        }
+    }
+
+    .hr {
+        height: 2px;
+        background: #57D9A6;
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .text {
+        @include SourceSansPro400_22_33;
+        text-align: center;
+        color: #4E4E65;
+        max-width: 644px;
+        margin: 0 auto 46px auto;
+    }
+
+    .link {
+        display: inline-block;
+        padding: 16px 24px;
+        @include SourceSansPro400_18_27;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1C1C33;
+        background: #57D9A6;
+        border-radius: 4px;
+        margin-bottom: 80px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .card_body {
+        display: flex;
+        margin: 0 -24px;
+
+        @media (max-width: 900px){
+            flex-direction: column;
+        }
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 1 33.33%;
+        margin: 0 24px;
+        padding: 22px 48px 24px 24px;
+        background: #FFFFFF;
+
+        @media (max-width: 900px){
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .title {
+        @include SourceSansPro700_24_29;
+        color: #1C1C33;
+        margin-bottom: 11px;
+    }
+
+    .card_text {
+        @include SourceSansPro400_18_27;
+        color: #4E4E65;
+        margin-bottom: 28px;
+
+        @media (max-width: 900px){
+            max-width: 500px;
+        }
+    }
+
+    .card_link {
+        display: inline-block;
+        @include SourceSansPro400_16_21;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #57D9A6;
+    }
+
+    
+}

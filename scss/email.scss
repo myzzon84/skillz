@@ -1,0 +1,56 @@
+@import "fonts";
+
+.email{
+    background: #f5f5f5;
+}
+
+.email_container {
+    position: relative;
+    max-width: 1306px;
+    margin: 0 auto;
+    background: #57D9A6;
+    border-radius: 4px;
+    padding: 78px 10px 95px 10px;
+
+    .h2 {
+        @include SourceSansPro700_44_53;
+        text-align: center;
+        color: #1C1C33;
+        margin-bottom: 58px;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    .user_email {
+        width: 400px;
+        height: 64px;
+        border: 1px solid #1C1C33;
+        border-radius: 4px;
+        background-color: #57D9A6;
+        padding-left: 19px;
+        @include SourceSansPro700_20_53;
+        color: #1C1C33;
+        margin-right: 16px;
+        outline: none;
+
+        @media (max-width: 569px){
+            margin-right: 0;
+            width: 90%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .submit_email {
+        padding: 5px 23px;
+        @include SourceSansPro700_20_53;
+        color: #57D9A6;
+        background: #1C1C33;
+        border-radius: 4px;
+
+        @media (max-width: 569px){
+            width: 70%;
+        }
+    }
+}

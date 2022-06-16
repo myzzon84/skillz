@@ -1,0 +1,42 @@
+@import "fonts";
+
+.quote {
+    background-color: #57D9A6;
+    padding: 82px 0 92px 0;
+
+    .slide{
+        padding: 0 10px;
+    }
+
+    .stars {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .quote_text {
+        @include SourceSansPro400_28_42_italic;
+        text-align: center;
+        color: #1C1C33;
+        max-width: 1006px;
+        margin: 0 auto 37px auto;
+    }
+
+    .avtor{
+        @include SourceSansPro400_18_27;
+        color: #4E4E65;
+    }
+
+    .stars img{
+        display: inline;
+    }
+
+    .slick-dots button{
+        &::before{
+            content: "";
+            width: 18px;
+            height: 18px;
+            background: #1C1C33;
+            border-radius: 9px;
+        }
+    }
+}

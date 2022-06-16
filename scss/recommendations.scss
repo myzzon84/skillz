@@ -1,0 +1,118 @@
+@import "fonts";
+
+.recommendations {
+    background-color: #1C1C33;
+
+    .container1440 {
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        @media (max-width: 720px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+
+
+    .image {
+        flex: 0 1 50%;
+        position: relative;
+
+        @media (max-width: 1000px) {
+            flex: 0 1 60%
+        }
+    }
+
+    .content {
+        flex: 0 1 50%;
+        padding: 142px 0 144px 0;
+
+        @media (max-width: 1000px) {
+            flex: 0 1 40%;
+            padding: 20px 0 20px 0;
+        }
+
+    }
+
+    .image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: left;
+
+        @media (max-width: 720px) {
+            position: relative;
+        }
+    }
+
+    .content_container {
+        padding: 0 48px;
+
+        @media (max-width: 420px) {
+            padding: 0 10px;
+        }
+    }
+
+    .h2 {
+        @include SourceSansPro700_44_53;
+        color: #F6F6F8;
+        margin-bottom: 16px;
+        min-width: 513px;
+
+        @media (max-width: 1000px) {
+            min-width: auto;
+            font-size: 40px;
+            line-height: 120%;
+        }
+
+        @media (max-width: 420px) {
+            font-size: 35px;
+            line-height: 120%;
+        }
+    }
+
+    .hr {
+        height: 2px;
+        background: #57D9A6;
+        width: 150px;
+        margin-bottom: 50px;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .text {
+        @include SourceSansPro400_22_33;
+        color: #F6F6F8;
+        margin-bottom: 46px;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 420px) {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    .link {
+        display: inline-block;
+        padding: 16px 24px;
+        @include SourceSansPro400_18_27;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1C1C33;
+        background: #57D9A6;
+        border-radius: 4px;
+
+        @media (max-width: 420px) {
+            padding: 8px 12px;
+        }
+    }
+}

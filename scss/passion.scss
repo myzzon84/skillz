@@ -1,0 +1,91 @@
+@import "fonts";
+
+.passion {
+    background-color: #1C1C33;
+
+    .container1440 {
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 109px 0 88px 0;
+
+        @media (max-width: 850px){
+            padding: 30px 10px 30px 10px;
+        }
+
+        @media (max-width: 750px){
+            flex-direction: column;
+        }
+    }
+
+    .image {
+        width: 50%;
+        padding-left: 66px;
+
+        @media (max-width: 850px){
+            padding-left: 0;
+        }
+
+        @media (max-width: 750px){
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 550px){
+            width: 90%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding-left: 40px;
+
+        @media (max-width: 750px){
+            width: 100%;
+        }
+
+        @media (max-width: 400px){
+            padding-left: 0;
+        }
+
+        .h2 {
+            @include SourceSansPro700_44_53;
+            color: #F6F6F8;
+            margin-bottom: 17px;
+        }
+
+        .hr {
+            height: 2px;
+            width: 150px;
+            background: #57D9A6;
+            margin-bottom: 50px;
+        }
+
+        .text {
+            @include SourceSansPro400_22_33;
+            color: #F6F6F8;
+            margin-bottom: 46px;
+            max-width: 548px;
+        }
+
+
+    }
+
+    .link {
+        display: inline-block;
+        @include SourceSansPro400_18_27;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1C1C33;
+        background: #57D9A6;
+        border-radius: 4px;
+        padding: 16px 24px;
+    }
+}
